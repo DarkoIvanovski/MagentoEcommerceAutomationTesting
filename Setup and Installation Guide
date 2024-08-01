@@ -1,0 +1,61 @@
+This guide provides step-by-step instructions to set up and run the automated tests for the Magento eCommerce website. The tests are written in Java, using Selenium WebDriver for browser automation and TestNG for test management. The development environment used is IntelliJ IDEA.
+
+Prerequisites
+Before setting up the project, ensure that the following software is installed on your system:
+
+Java Development Kit (JDK) 8 or higher
+
+Download from Oracle's official website or install via a package manager.
+Verify installation by running java -version in the command line.
+IntelliJ IDEA
+
+Download and install from JetBrains.
+Maven
+
+Maven is used for dependency management. Download and install from Apache Maven.
+Verify installation by running mvn -version in the command line.
+Project Setup
+Clone the Repository
+
+Clone the repository to your local machine using the following command:
+https://github.com/DarkoIvanovski/MagentoEcommerceAutomationTesting.git
+
+Import the Project into IntelliJ IDEA
+
+Open IntelliJ IDEA.
+Select File > Open and navigate to the cloned repository directory.
+IntelliJ will automatically detect the Maven project. Click on Import Changes if prompted.
+Configure Maven
+
+Open the pom.xml file and ensure all dependencies are correctly listed. The key dependencies include:
+Selenium WebDriver: For browser automation.
+TestNG: For test management.
+WebDriver Manager: For managing browser drivers automatically.
+Sync the Maven project by clicking on the Reload All Maven Projects button in the Maven tool window.
+
+Set Up Test Configuration
+
+Navigate to Run > Edit Configurations.
+Click on the + icon and select TestNG.
+Set the following:
+Name: Give a name to your configuration, e.g., "Run All Tests."
+Test kind: Choose "All in package" or "Class" based on your requirement.
+Package/Class: Specify the package or class containing the tests.
+VM options (optional): Add any necessary JVM options.
+Running the Tests
+
+Right-click on the test class or package and select Run > TestNG.
+Alternatively, use the configured TestNG run configuration.
+Additional Configuration
+Browser Drivers: The project uses WebDriverManager to manage browser drivers automatically. No additional configuration is needed for drivers like ChromeDriver or GeckoDriver.
+
+Test Data and Environment Configuration: If there are any external configuration files (e.g., config.properties), ensure they are correctly set up and accessible.
+
+Troubleshooting
+Common Issues:
+
+Missing Dependencies: Ensure Maven dependencies are correctly specified in the pom.xml.
+Driver Issues: If the browser driver does not start, ensure WebDriverManager is correctly included and configured.
+Logs and Reports: TestNG generates reports and logs by default. Check the test-output directory for details.
+
+This setup guide ensures that you have a functional environment for running automated tests on the Magento eCommerce website. If you encounter any issues, consult the respective documentation for Java, Selenium, TestNG, or IntelliJ IDEA.
