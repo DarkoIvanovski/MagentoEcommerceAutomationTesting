@@ -1,0 +1,27 @@
+This repository contains automated tests for the Magento eCommerce website, designed to validate key functionalities and user interactions. The tests include:
+
+Home Page: Verification of the main page's elements and navigation.
+Create an Account: Testing the user registration process for accuracy and ease.
+Sign In: Ensuring the login feature works seamlessly.
+Account: Checking account management options and features.
+Menu Functionality: Testing navigation through the website's menu system.
+Filter Products: Validating product filtering capabilities.
+Show Products: Verifying the display and listing of products.
+Advanced Search Products: Testing the advanced search feature for specific product queries.
+Compare Product: Ensuring the product comparison feature functions correctly.
+Add Product to Wish List: Testing the addition of products to a wishlist.
+Order Product (End to End Flow): Conducting a full purchase cycle from selection to checkout.
+Shopping Cart: Verifying shopping cart functionalities, including adding, removing, and updating items.
+Review Product: Ensuring users can submit product reviews correctly.
+What’s New Page: Checking the latest products and updates section.
+Women Page: Testing the page dedicated to women's products.
+Men Page: Testing the page dedicated to men's products.
+Gear Page: Verifying the display and functionality of the gear category.
+Training Page: Testing the display and purchasing options for training products.
+Sale Page: Ensuring sale items are correctly listed and functional.
+Privacy Policy Page: Verifying the accessibility and content of the privacy policy.
+Orders and Returns Page: Testing the order tracking and return request processes.
+
+Bug Reported
+Bug Description: When navigating to the Privacy Policy page, clicking on "Questions for Luma?" and then clicking on "Contact Us," a 404 error page is displayed with the message: "404 Not found: Whoops, our bad... The page you requested was not found, and we have a fine guess why. If you typed the URL directly, please make sure the spelling is correct. If you clicked on a link to get here, the link is outdated."
+This test suite is designed to ensure that the Magento eCommerce platform operates smoothly and provides an optimal user experience. The tests are implemented using [Test Automation Framework/Tool, e.g., Selenium, TestNG], following best practices for maintainability and scalability.
